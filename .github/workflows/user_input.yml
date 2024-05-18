@@ -1,0 +1,35 @@
+name: Test User Input workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      number1:
+        # Friendly description to be shown in the UI instead of 'number1'.
+        description: 'First number'
+        # Default value if no value is explicitly provided.
+        default: '0'
+        # Input has to be provided for the workflow to run.
+        required: true
+        # The data type of the input.
+      number2:
+        # Friendly description to be shown in the UI instead of 'number2'.
+        description: 'Second number'
+        # Default value if no value is explicitly provided.
+        default: '0'
+        # Input has to be provided for the workflow to run.
+        required: true
+        # The data type of the input.
+
+jobs:
+  add_numbers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add numbers
+        id: sum
+        run: echo "::set-output name=sum::$((${{ inputs.number1 }} + ${{ inputs.number2 }}))"
+        
+      - name: Display sum
+        run: echo "The sum of ${{ inputs.number1 }} and ${{ inputs.number2 }} is ${{ steps.sum.outputs.sum }}"
