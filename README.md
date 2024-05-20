@@ -76,3 +76,14 @@ Complete Playlist :   [![Mastering GitHub Actions](https://img.shields.io/badge/
     * Simplifying complex workflows by breaking them down into reusable components
     * Video  :   [![YouTube](https://img.shields.io/badge/YouTube-Video-green)](https://youtu.be/NliieyVkAJE)
 
+
+9. **Logging and Monitoring in GitHub Actions**
+    * Understanding Logging and Monitoring in GitHub Actions
+    * Customize log retention period
+    * Setup alerts on Failed GitHub Action workflows
+    * Video  :   [![YouTube](https://img.shields.io/badge/YouTube-Video-green)](https://youtu.be/N-X5BhIN6mc)
+
+10. **Build and deploy to Cloud Run using GitHub Action**
+    * Building and pushing docker image to Artifact registry
+    * Deploying services to Cloud Run
+    * Video  :   [![YouTube](https://img.shields.io/badge/YouTube-Video-green)](https://youtu.be/4FRjoc9ycNs)
